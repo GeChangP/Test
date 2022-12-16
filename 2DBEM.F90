@@ -41,12 +41,12 @@
       nK     = 300
 
       open(newunit=IRAO,file="MotionRAO.dat",status="replace")
-      write(IRAO,'(a)') "# kB/2 |X2|/A |X3|/A |X4|/(kA)"//
-     &"Phs(X2) Phs(X3) Phs(X4)"
+      write(IRAO,'(a)') "# kB/2 |X2|/A |X3|/A |X4|/(kA)"&
+      "Phs(X2) Phs(X3) Phs(X4)"
 
       open(newunit=IDIF,file="WaveExtForce.dat",status="replace")
-      write(IRAO,'(a)') "# kB/2 |F2|/A |F3|/A |F4|/(kA)"//
-     &"Phs(F2) Phs(F3) Phs(F4)"
+      write(IRAO,'(a)') "# kB/2 |F2|/A |F3|/A |F4|/(kA)"&
+      "Phs(F2) Phs(F3) Phs(F4)"
 
       open(newunit=IRAD,file="RadiationForce.dat",status="replace")
       write(IRAD,'(a)') "# nFreq "
@@ -66,12 +66,12 @@
 
     9 STOP
 
-  600 FORMAT(//14X,48('*')
-     &   /19X,'2-D RADIATION AND DIFFRACTION PROBLEMS',
-     &   /19X,'    OF A GENERAL-SHAPED 2-D BODY',
-     &   /19X,'     BY INTEGRAL-EQUATION METHOD',/14X,48('*'),
-     &  //15X,'NUMBER OF PANELS OVER THE WHOLE BODY---(NB)=',I4,
-     &   /15X,'HALF-BEAM TO DRAFT RATIO---------H0(=B/2/D)=',F8.4,
-     &   /15X,'SECTIONAL AREA RATIO FOR RIGHT-SIG1(=S/B/D)=',F8.4,
-     &   /15X,'SECTIONAL AREA RATIO FOR LEFT--SIG2(=S/B/D)=',F8.4/)
+  600 FORMAT(//14X,48('*')&
+        /19X,'2-D RADIATION AND DIFFRACTION PROBLEMS',&
+        /19X,'    OF A GENERAL-SHAPED 2-D BODY',&
+        /19X,'     BY INTEGRAL-EQUATION METHOD',/14X,48('*'),&
+        /15X,'NUMBER OF PANELS OVER THE WHOLE BODY---(NB)=',I4,&
+        /15X,'HALF-BEAM TO DRAFT RATIO---------H0(=B/2/D)=',F8.4,&
+        /15X,'SECTIONAL AREA RATIO FOR RIGHT-SIG1(=S/B/D)=',F8.4,&
+        /15X,'SECTIONAL AREA RATIO FOR LEFT--SIG2(=S/B/D)=',F8.4/)
       END
