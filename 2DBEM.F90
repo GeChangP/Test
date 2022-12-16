@@ -21,10 +21,10 @@
 
       WRITE(6,600) NB,H0,SIG1,SIG2
 
-C     Center of Gravity
+!     Center of Gravity
       OGD =0.05D0
 
-C     Radius of Roll Gyration
+!     Radius of Roll Gyration
       KZZB=0.35D0
 
       write(*,*) "NT plus value:"
@@ -75,7 +75,7 @@ C     Radius of Roll Gyration
      &   /15X,'SECTIONAL AREA RATIO FOR RIGHT-SIG1(=S/B/D)=',F8.4,
      &   /15X,'SECTIONAL AREA RATIO FOR LEFT--SIG2(=S/B/D)=',F8.4/)
       END
-C============================================================
+!============================================================
       SUBROUTINE OFFSET(NB,NT,H0,SIG1,SIG2,OGD,KZZB,IPRINT)
       IMPLICIT DOUBLE PRECISION (A-H,K,O-Z)
 
@@ -169,9 +169,9 @@ C============================================================
   620 FORMAT(7X,I2,1X,2F10.5,2X,2F10.5)
       RETURN
       END
-C============================================================
+!============================================================
       SUBROUTINE SDSUB(XPI,YPI,NB,SS,DD)
-C     Kernel Function: Rankine Source
+!     Kernel Function: Rankine Source
       IMPLICIT DOUBLE PRECISION (A-H,O-Z)
 
       PARAMETER (MX=105,NQ=101)
@@ -216,9 +216,9 @@ C     Kernel Function: Rankine Source
   100 CONTINUE
       RETURN
       END
-C============================================================
+!============================================================
       SUBROUTINE SDCAL(XPI,YPI,AK,NB,ZS,ZD)
-C     Kernel Function: Wave Term
+!     Kernel Function: Wave Term
       IMPLICIT DOUBLE PRECISION (A-H,O-Y)
       IMPLICIT COMPLEX*16 (Z)
 
@@ -277,7 +277,7 @@ C     Kernel Function: Wave Term
   200 CONTINUE
       RETURN
       END
-C============================================================
+!============================================================
       SUBROUTINE SOLVE(NB,NT,AK)
       IMPLICIT DOUBLE PRECISION (A-H,O-Y)
       IMPLICIT COMPLEX*16 (Z)
@@ -345,7 +345,7 @@ C============================================================
   250 CONTINUE
       RETURN
       END
-C============================================================
+!============================================================
       SUBROUTINE FORCE(NB,AK,IPRINT)
       IMPLICIT DOUBLE PRECISION (A-H,O-Y)
       IMPLICIT COMPLEX*16 (Z)
@@ -427,7 +427,7 @@ C============================================================
   650 FORMAT(99(1pe15.6))
       RETURN
       END
-C============================================================
+!============================================================
       SUBROUTINE MOTION(AK,IPRINT)
       IMPLICIT DOUBLE PRECISION (A-H,K,O-Y)
       IMPLICIT COMPLEX*16 (Z)
@@ -485,7 +485,7 @@ C============================================================
   620 FORMAT(99(1pe15.6))
       END
 
-C============================================================
+!============================================================
       SUBROUTINE ZSWEEP(NDIM,N,ZA,ZB,NEQ,EPS)
       IMPLICIT DOUBLE PRECISION (A-H,O-Y)
       IMPLICIT COMPLEX*16 (Z)
@@ -529,7 +529,7 @@ C============================================================
       RETURN
       END
 
-C============================================================
+!============================================================
       SUBROUTINE EZE1Z(XX,YY,EC,ES)
       IMPLICIT DOUBLE PRECISION (A-H,O-Y)
       IMPLICIT COMPLEX*16 (Z)
@@ -604,5 +604,4 @@ C============================================================
       RETURN
       END
 
-C============================================================
-
+!============================================================
