@@ -1,0 +1,1 @@
+/usr/bin/gfortran   -cpp -fPIC -O0 -Wall -Wextra -fcheck=all -fbacktrace -pedantic -fopenmp CMakeFiles/appTutorial.dir/src/appTutorial.F90.o CMakeFiles/appTutorial.dir/src/OFFSET.F90.o  -o ../../../bin/appTutorial  ../../../lib/libmathPack.a ../../../ThirdParty/lapack/liblapack.a ../../../ThirdParty/lapack/librefblas.a 

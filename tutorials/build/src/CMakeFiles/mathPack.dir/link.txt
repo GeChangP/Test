@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../lib/libmathPack.a  CMakeFiles/mathPack.dir/mathPack/mathPack.F90.o
+/usr/bin/ranlib ../../lib/libmathPack.a
